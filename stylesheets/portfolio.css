@@ -1,0 +1,40 @@
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: right;
+}
+
+.name-badge {
+    text-align: center;
+    font-family: georgia;
+}
+
+.name-badge h1 {
+    letter-spacing: 5px;
+}
+
+.sub-work {
+    font-family: georgia;
+    letter-spacing: 5px;
+    color: #737373;
+}
+
+.project {
+    font-family: georgia;
+}
+
+@media screen and (min-width: 768px) {
+    .name-badge {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .image-badge {
+        display: flex;
+        justify-content: center;
+    }
+}
+
