@@ -17,10 +17,35 @@ footer {
     letter-spacing: 5px;
 }
 
+.twitter {
+    margin-left: 0px;
+}
+
+.social-links .social {
+    display: inline-block;
+    border: none;
+    margin-top:10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.social-links .social2 {
+    display: inline-block;
+    border: none;
+    margin-top:10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-left: 25px;
+
+}
+
 .sub-work {
     font-family: georgia;
     letter-spacing: 5px;
     color: #737373;
+    margin-bottom: 10px;
 }
 
 .project {
@@ -40,3 +65,80 @@ footer {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .project-item {
+        margin-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .project-item {
+        margin-bottom: 55px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .project-item {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@-webkit-keyframes burst {
+    0% {
+        opacity: .6;
+    }
+
+    50% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes burst {
+    0% {
+        opacity: .6;
+    }
+
+    50% {
+        -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+    -webkit-animation: burst 2s infinite linear;
+    animation: burst 2s infinite linear;
+}
+
+.faa-burst.animated.faa-fast,
+.faa-burst.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-fast {
+    -webkit-animation: burst 1s infinite linear;
+    animation: burst 1s infinite linear;
+}
+
+.faa-burst.animated.faa-slow,
+.faa-burst.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-slow {
+    -webkit-animation: burst 3s infinite linear;
+    animation: burst 3s infinite linear;
